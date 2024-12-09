@@ -1,11 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <MapView
+        style={styles.map}
+        provider="google" // Указываем, что используется Google Maps
+        apiKey="AIzaSyCO9Y3Fgw9bpardf4T9086TYUu8po8ceb0" // Ваш API-ключ
+        initialRegion={{
+          latitude: 50.4501, // Пример для Киева
+          longitude: 30.5035,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      >
+        <Marker coordinate={{ latitude: 50.4501, longitude: 30.5035 }} />
+      </MapView>
     </View>
   );
 }
@@ -13,8 +25,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  map: {
+    flex: 1,
   },
 });
