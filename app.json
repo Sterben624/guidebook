@@ -1,35 +1,4 @@
 {
-  "expo": {
-    "name": "guidebook",
-    "slug": "guidebook",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "googleMapsApiKey": "AIzaSyCO9Y3Fgw9bpardf4T9086TYUu8po8ceb0"
-    },
-    "platforms": [
-      "ios",
-      "android"
-    ]
-  }
+  "name": "guidebook",
+  "displayName": "guidebook"
 }
