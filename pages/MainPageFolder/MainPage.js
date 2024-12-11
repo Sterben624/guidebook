@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList, StyleSheet, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const data = require('../../locations.json');
@@ -19,6 +19,9 @@ const MainPage = () => {
         })
       }
     >
+      {/* Додаємо зображення */}
+      <Image source={{ uri: item.images[0] }} style={styles.image} />
+      {console.log(item.images[0])}
       <Text style={styles.name}>{item.name}</Text>
       <Text style={styles.type}>Тип: {item.type}</Text>
     </TouchableOpacity>
@@ -38,6 +41,7 @@ const MainPage = () => {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 16 },
   card: { padding: 16, marginBottom: 8, backgroundColor: '#fff', borderRadius: 8, elevation: 3 },
+  image: { width: '100%', height: 200, borderRadius: 8, marginBottom: 8 },
   name: { fontSize: 18, fontWeight: 'bold' },
   type: { fontSize: 14, color: '#555' },
 });
