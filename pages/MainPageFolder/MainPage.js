@@ -20,8 +20,8 @@ const MainPage = () => {
       }
     >
       {/* Додаємо зображення */}
-      <Image source={{ uri: item.images[0] }} style={styles.image} />
       {console.log(item.images[0])}
+      <Image source={{ uri: item.images[0] }} style={styles.image} />
       <Text style={styles.name}>{item.name}</Text>
       <Text style={styles.type}>Тип: {item.type}</Text>
     </TouchableOpacity>
