@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Говерла",
+      "type": "гора",
+      "description": "Найвища гора України, 2061 м.",
+      "images": [
+        "https://example.com/hoverla1.jpg",
+        "https://example.com/hoverla2.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Свидовецький хребет",
+      "type": "місце для трекінгу",
+      "description": "Популярний маршрут для трекінгу.",
+      "images": [
+        "https://example.com/svydovets1.jpg",
+        "https://example.com/svydovets2.jpg"
+      ]
+    }
+  ]
+  
